@@ -490,3 +490,20 @@ def get_category(description):
 
 
 # simpleveg_urls['category'] = simpleveg_urls['category'].apply(lambda x: get_category(x))
+    
+    
+def print_classes_hor(dataseries):
+    '''print value counts from a dataframe series'''
+    count_classes = dataseries.value_counts()
+    
+    fig, ax1 = plt.subplots()
+    ax2 = ax1.twiny() 
+    
+    #count_classes.plot(kind='barh', ax=ax1, color='white')
+    ax2.barh(y=count_classes.index, width=count_classes.values, color='blue', alpha=0.7)
+
+    ax1.set_xlabel('Frequency')
+    ax2.set_xlabel('Value Counts')
+
+    plt.show()
+
