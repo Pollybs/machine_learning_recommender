@@ -1,4 +1,4 @@
-<h1> Machine Learning Project: - Natural language processing (NLP) - Recipes Recommender </h1>
+<h1> Machine Learning Project: Natural language processing (NLP) | Recipes Recommender </h1>
 
 In this project, I built a model that can recommend vegan and vegetarian recipes, based on input from another recipe (omnivore or vegetarian). 
 The model was built using Natural Language Processing (NLP): CountVectorizer and Cosine_similarity
